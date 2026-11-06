@@ -1,0 +1,19 @@
+<head>
+
+<title>Slideshow</title>
+
+<script>
+	var cronometro;
+	var nroImg = 1;
+	function iniciar() {cronometro = setInterval(mudarImg, 1000);}
+	function pausar() { clearInterval (cronometro);}
+	function mudarImg() {
+	(nroImg<4)?nroImg++:nroImg=1;
+	document.getElementById("boy").src= Imagens/boy0${nroImg}.png";
+	}
+</script>
+
+	</head>
+	<body onload="iniciar()">
+	<img id="boy" src="Imagens/boy01.png" alt="" onmouseover="pausar()" onmouseout="iniciar()">
+</body>

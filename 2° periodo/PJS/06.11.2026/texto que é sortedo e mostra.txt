@@ -1,0 +1,15 @@
+<script>
+function exibirMsg(msg) {
+	}
+	document.getElementById("msg").innerHTML = msg;
+function iniciar() {
+	msgs = ["Msg 1", "Msg 2", "Msg 3","Msg 4", "Msg 5","Msg 6", "Msg 7", "Msg 8", "Msg
+	9", "Msg 10"];
+	setTimeout(exibirMsg, 2000, msgs [parseInt(Math.random()*10)]);
+	}
+</script>
+
+	<body onload="iniciar()">
+	<p>Mensagem do dia: <span id="msg">Aguarde...</span></p>
+
+</body>

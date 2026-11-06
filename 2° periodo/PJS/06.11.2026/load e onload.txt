@@ -1,0 +1,52 @@
+// Script de um plugin de chat que você instalou
+window.onload = function() {
+    console.log("Iniciando o chat do cliente...");
+};
+
+// O seu código principal na página
+window.onload = function() {
+    console.log("Iniciando o carrossel de fotos...");
+};
+
+// RESULTADO NO CONSOLE:
+// "Iniciando o carrossel de fotos..."
+// (O chat do cliente NUNCA vai iniciar porque foi apagado!)
+
+
+
+// Script do plugin de chat
+window.addEventListener('load', function() {
+    console.log("Iniciando o chat do cliente...");
+});
+
+// O seu código principal
+window.addEventListener('load', function() {
+    console.log("Iniciando o carrossel de fotos...");
+});
+
+// RESULTADO NO CONSOLE:
+// "Iniciando o chat do cliente..."
+// "Iniciando o carrossel de fotos..."
+// (Ambos funcionam perfeitamente!)
+
+<body>
+<script>
+	var cronometro;
+	function play() {cronometro = setInterval('incrementar ()', 1000);}
+	function pause() { clearInterval(cronometro);}
+	function stop() {
+}
+	pause();
+	document.getElementById("contador").innerHTML 0;
+	function incrementar() {document.getElementById("contador").innerHTML++; }
+</script>
+
+
+	<p>Contador automático:</p>
+	<form>
+	<input type="button" value="Play" onclick="play()">
+	<input type="button" value="Pause" onclick="pause()">
+	<input type="button" value="Stop" onclick="stop()">
+	<p>Contador: <span id="contador">0</span></p>
+	</form>
+</body>
